@@ -31,8 +31,9 @@ public class Employee{
     public int getAnnualSalary(){
         return this.AnnualSalary;
     }
-    public void raiseSalary(int percent){
-        this.salary=salary+salary*percent/100;
+    public int raiseSalary(int percent){
+        this.salary=(AnnualSalary+AnnualSalary*percent/100)/12;
+        return salary;
     }
     public void setSalary(int salary){
         this.salary=salary;
@@ -42,8 +43,8 @@ public class Employee{
     }
     public static void main(String args[]){
         Employee e1 = new Employee(1,"Barfdgdh","hdhjjdkd",10000);
-        e1.raiseSalary(10);
-        System.out.println(e1.getSalary());
-        System.out.println(e1.toString());
+        
+        System.out.println(e1.raiseSalary(10));
+        System.out.println(e1);
     }
 }
