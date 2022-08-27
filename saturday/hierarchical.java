@@ -25,6 +25,7 @@ class internemployee extends employee{
 
     }
 
+    
 }
 public class hierarchical{
     public static void main(String[] args)
