@@ -10,6 +10,7 @@ public class FileRead {
     {
         File file=new File("hello1.txt");
         //createsth file
+        file.createNewFile();
         FileWriter writer = new FileWriter(file);
         //writes the content to the file
         writer.write("this\n is \n an \n example\n");
